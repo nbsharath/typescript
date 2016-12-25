@@ -1,0 +1,9 @@
+/* this is awesome */
+/* put the normalizer first*/
+@import '_global.scss';
+@import '_navbar.scss';
+@import 'partials/_varibles.scss';
+@import 'partials/_navbar.scss';
+body{
+	 color: red;
+}
