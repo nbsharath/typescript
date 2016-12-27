@@ -8,8 +8,15 @@ var c = 3;
 [a,b,c]=[b,a,c];
 [a,b]=[b,a];
 
+//interface
+interface TodoInterface{
+    id: number,
+    name2: string,
+    completed: boolean
+}
+
 //object part
-var todo={
+var todo: TodoInterface ={
 	id: 123,
 	name2: 'sharath',
 	completed : true,
@@ -17,7 +24,7 @@ var todo={
 var {id: RoleNumber,completed,name2} = todo;
 
 //function parameter destucturing
-function counter( {id,name2, completed , completed: current}){
+/*function counter( {id,name2, completed, completed: current}){
 
-}
-counter(todo);
+}*/
+//counter(todo);

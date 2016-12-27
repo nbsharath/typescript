@@ -5,7 +5,7 @@ interface Todo{
 
 }
 
-var todo: Todo= {
+var todoser: Todo= {
 	name: 'sharath',
 };
 

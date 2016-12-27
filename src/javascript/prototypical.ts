@@ -2,7 +2,7 @@
 // Javascript: You can't create class that can be used to create objects with same behaviour.But
 //you can use functions toachieve that like this.
 
-function Player(n,s){
+function Player(n:string,s: number){
     this.name= n;
     this.score= s;
 }

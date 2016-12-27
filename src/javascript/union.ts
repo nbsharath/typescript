@@ -9,4 +9,5 @@ function totalCalculating( x : (string | any[]),y: (string | any[])):number {
 	if(x instanceof String){
 		x.substr(1);
 	}
+    return null;
 }

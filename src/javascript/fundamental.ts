@@ -9,7 +9,7 @@ var human = {
 }
 
 //data type infringing
-function calculating(birthyear){
+function calculating(birthyear: number){
 	return Date.now() - birthyear;
 }
 

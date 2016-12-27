@@ -10,6 +10,12 @@ function totalLenght(x, y) {
     var total = x.length + y.length;
     return total;
 }
+var TodoServices = (function () {
+    function TodoServices(todo) {
+        this.todo = todo;
+    }
+    return TodoServices;
+}());
 /* Desctructing the array into variables */
 var array = [123, 'shrath', true];
 var id1 = array[0], name1 = array[1], completed1 = array[2];
@@ -25,12 +31,12 @@ var todo = {
     completed: true
 };
 var RoleNumber = todo.id, completed = todo.completed, name2 = todo.name2;
-//function parameter destucturing
-function counter(_a) {
-    var id = _a.id, name2 = _a.name2, completed = _a.completed, current = _a.completed;
-}
-counter(todo);
 var _a, _b;
+//function parameter destucturing
+/*function counter( {id,name2, completed, completed: current}){
+
+}*/
+//counter(todo);
 var todoState;
 (function (todoState) {
     todoState[todoState["Active"] = 1] = "Active";
@@ -64,7 +70,7 @@ function total(x, y) {
     var total = x.length + y.length;
     return total;
 }
-var todo = {
+var todoser = {
     name: 'sharath'
 };
 /* interface function function without name */
@@ -124,4 +130,5 @@ function totalCalculating(x, y) {
     if (x instanceof String) {
         x.substr(1);
     }
+    return null;
 }

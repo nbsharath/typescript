@@ -1,7 +1,7 @@
 /* First script */
 var container = document.getElementById('container');
 
-function Counter(el){
+function Counter(el: any){
 	this.count= 0;
 	el.innerHTML=this.count;
 	el.addEventListener('click',()=>{
@@ -9,5 +9,4 @@ function Counter(el){
 		el.innerHTML=this.count;
 	})
 }
-
 new Counter(container);
