@@ -123,6 +123,32 @@ function Counter(el) {
     });
 }
 new Counter(container);
+/* static variable in the class */
+//previous methods
+function todoMethod() {
+}
+//static variable
+/*todoMethod.todoId= 0;
+//static method
+todoMethod.staticMethod= function(){
+    console.log('somthing static');
+}
+todoMethod.prototype.add = function(){
+    var current = todoMethod.todoId+1;
+    todoMethod.staticMethod();
+}*/
+//now the rocking way to achiev this in ES6
+var staticTodoService = (function () {
+    function staticTodoService(name) {
+        this.name = name;
+    }
+    staticTodoService.prototype.getAll = function () {
+    };
+    staticTodoService.display = function () {
+    };
+    return staticTodoService;
+}());
+staticTodoService.todoId = 0;
 /* union parameter */
 function totalCalculating(x, y) {
     var total = x.length + y.length;
