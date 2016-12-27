@@ -10,10 +10,13 @@ function totalLenght(x, y) {
     var total = x.length + y.length;
     return total;
 }
+/* classses related */
 var TodoServices = (function () {
     function TodoServices(todo) {
         this.todo = todo;
     }
+    TodoServices.prototype.getAll = function () {
+    };
     return TodoServices;
 }());
 /* Desctructing the array into variables */
