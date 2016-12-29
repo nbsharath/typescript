@@ -5,10 +5,10 @@ interface MyTodoList{
 
 
 enum todoState{
-	Active =  1,
+    New =  1,
+    Active,
+    Deleted,
 	Completed,
-	New,
-	Deleted,
 };
 var mytodo: MyTodoList={
 	name:"charile",
