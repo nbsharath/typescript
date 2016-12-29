@@ -46,6 +46,7 @@ gulp.task('build-js', function() {
 gulp.task('type', function () {
     return gulp.src('src/**/*.ts')
         .pipe(ts({
+            "target": "es5",
             noImplicitAny: true,
             out: 'script.js'
         }))
