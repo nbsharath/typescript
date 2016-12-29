@@ -1,5 +1,5 @@
 /* static variable in the class */
-//previous methods
+//previous methods object typescipt member type
  function todoMethod(){
 
  }

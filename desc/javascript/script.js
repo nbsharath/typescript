@@ -1,3 +1,42 @@
+/* getter and setter function */
+var accessors = {
+    name: 'sharath',
+    get state() {
+        return this._state;
+    },
+    set state(newState) {
+        if (newState == todoState.Completed) {
+            var canBeCompleted = newState == todoState.Active || newState == todoState.Deleted;
+        }
+        if (!canBeCompleted) {
+            throw ('The todo can onlt be moed to complted if it is in active or deleted state');
+        }
+        this._state = newState;
+    }
+};
+accessors.state = todoState.Active;
+/* getter and setter syntax for the class */
+var smartTodo = (function () {
+    function smartTodo() {
+    }
+    Object.defineProperty(smartTodo.prototype, "state", {
+        get: function () {
+            return this._state;
+        },
+        set: function (newState) {
+            if (newState == todoState.Completed) {
+                var canBeCompleted = newState == todoState.Active || newState == todoState.Deleted;
+            }
+            if (!canBeCompleted) {
+                throw ('The todo can onlt be moed to complted if it is in active or deleted state');
+            }
+            this._state = newState;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return smartTodo;
+}());
 //anonymous interface
 var Haveto;
 //equal is there then it is taken as object declaration.
@@ -31,7 +70,7 @@ _b = [b, a], a = _b[0], b = _b[1];
 var todo = {
     id: 123,
     name2: 'sharath',
-    completed: true
+    completed: true,
 };
 var RoleNumber = todo.id, completed = todo.completed, name2 = todo.name2;
 var _a, _b;
@@ -42,10 +81,10 @@ var _a, _b;
 //counter(todo);
 var todoState;
 (function (todoState) {
-    todoState[todoState["Active"] = 1] = "Active";
-    todoState[todoState["Completed"] = 2] = "Completed";
-    todoState[todoState["New"] = 3] = "New";
-    todoState[todoState["Deleted"] = 4] = "Deleted";
+    todoState[todoState["New"] = 1] = "New";
+    todoState[todoState["Active"] = 2] = "Active";
+    todoState[todoState["Deleted"] = 3] = "Deleted";
+    todoState[todoState["Completed"] = 4] = "Completed";
 })(todoState || (todoState = {}));
 ;
 var mytodo = {
@@ -74,7 +113,7 @@ function total(x, y) {
     return total;
 }
 var todoser = {
-    name: 'sharath'
+    name: 'sharath',
 };
 /* interface function function without name */
 var container = document.getElementById('changeMe');
@@ -124,7 +163,7 @@ function Counter(el) {
 }
 new Counter(container);
 /* static variable in the class */
-//previous methods
+//previous methods object typescipt member type
 function todoMethod() {
 }
 //static variable
