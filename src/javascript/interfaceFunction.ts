@@ -1,4 +1,4 @@
-/* interface function function without name */
+/* interface function function without name
 var container =  document.getElementById('changeMe');
 container.innerHTML='first change';
 interface Jquery{
@@ -17,3 +17,4 @@ var element = $('changeMe');
 element.innerHTML= 'shrath';
 var secondOne= $('ConfigurMe');
 secondOne.innerHTML= $(1)+'fdmfl';
+*/

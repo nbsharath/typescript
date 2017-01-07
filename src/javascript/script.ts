@@ -1,4 +1,4 @@
-/* First script */
+/* First script
 var container = document.getElementById('container');
 
 function Counter(el: any){
@@ -10,3 +10,4 @@ function Counter(el: any){
 	})
 }
 new Counter(container);
+ */

@@ -2,6 +2,7 @@
 interface Todo{
 	name:string;
 	completed ?: boolean;
+    state ?: todoState;
 
 }
 

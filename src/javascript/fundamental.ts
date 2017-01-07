@@ -1,4 +1,4 @@
-/* fundamentals for typescipt */
+/* fundamentals for typescipt
 var human = {
 	name: 'sharath',
 	id : 'human',
@@ -17,3 +17,4 @@ function total( x :any[], y:string ): number{
 	var total: number= x.length + y.length;
 	return total;
 }
+*/

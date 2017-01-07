@@ -1,4 +1,4 @@
-/* getter and setter function */
+/* getter and setter function
 var accessors = {
     name: 'sharath',
     get state(){
@@ -6,7 +6,7 @@ var accessors = {
     },
     set state(newState){
         if( newState == todoState.Completed){
-            var canBeCompleted = newState == todoState.Active || newState == todoState.Deleted;
+            var canBeCompleted = (newState == todoState.Active || newState == todoState.Deleted) ;
         }
         if(!canBeCompleted){
             throw('The todo can onlt be moed to complted if it is in active or deleted state');
@@ -16,7 +16,7 @@ var accessors = {
 }
 accessors.state = todoState.Active;
 
-/* getter and setter syntax for the class */
+/* getter and setter syntax for the class
 class smartTodo {
     _state : todoState;
     get state(){
@@ -33,3 +33,4 @@ class smartTodo {
     }
 
 }
+*/

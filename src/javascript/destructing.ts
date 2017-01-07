@@ -1,4 +1,4 @@
-/* Desctructing the array into variables */
+/* Desctructing the array into variables
 var array =[123,'shrath',true];
 var [id1, name1 ,completed1] = array;
 

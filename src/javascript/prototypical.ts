@@ -1,4 +1,4 @@
-//Prototypical inheritence
+/*//Prototypical inheritence
 // Javascript: You can't create class that can be used to create objects with same behaviour.But
 //you can use functions toachieve that like this.
 
@@ -21,3 +21,4 @@ sharath.increment();
 var shru = new Player('shru',22);
 shru.getAll();
 shru.increment();
+*/

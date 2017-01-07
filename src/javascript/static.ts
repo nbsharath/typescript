@@ -1,4 +1,4 @@
-/* static variable in the class */
+/* static variable in the class
 //previous methods object typescipt member type
  function todoMethod(){
 
@@ -12,7 +12,7 @@ todoMethod.staticMethod= function(){
 todoMethod.prototype.add = function(){
     var current = todoMethod.todoId+1;
     todoMethod.staticMethod();
-}*/
+}
 
 //now the rocking way to achiev this in ES6
 
@@ -28,3 +28,4 @@ class staticTodoService{
 
     }
 }
+*/

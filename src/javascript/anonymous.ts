@@ -1,4 +1,4 @@
-//anonymous interface
+/*//anonymous interface
 
 var Haveto:{ name: string};
 //equal is there then it is taken as object declaration.
@@ -14,3 +14,4 @@ function totalLenght( x:{length : number},y: {length: number}){
 	var total: number = x.length + y.length;
 	return total;
 }
+*/
