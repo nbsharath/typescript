@@ -7,10 +7,18 @@ class TodoStateChanger {
     }
 
     changeState(todo: Todo): Todo{
-        if(canChangeState(todo)){
+        if(this.canChangeState(todo)){
             todo.state = this.newstate;
         }
         return todo;
     }
 
 }
+
+//extender
+class CompleteTodoStateChanger extends TodoStateChanger{
+    constructor(){
+    super(todoState.Completed);
+    }
+}
+

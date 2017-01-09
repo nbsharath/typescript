@@ -60,4 +60,3 @@ gulp.task('watch', function() {
     gulp.watch('src/**/*.*', ['styles', 'html', 'build-js',['type']]);
     gulp.watch('desc/*.*').on('change', browserSync.reload);
 })
-

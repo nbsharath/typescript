@@ -1,3 +1,8 @@
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 /* getter and setter function
 var accessors = {
     name: 'sharath',
@@ -139,13 +144,21 @@ var TodoStateChanger = (function () {
         return !!todo;
     };
     TodoStateChanger.prototype.changeState = function (todo) {
-        if (canChangeState(todo)) {
+        if (this.canChangeState(todo)) {
             todo.state = this.newstate;
         }
         return todo;
     };
     return TodoStateChanger;
 }());
+//extender
+var CompleteTodoStateChanger = (function (_super) {
+    __extends(CompleteTodoStateChanger, _super);
+    function CompleteTodoStateChanger() {
+        return _super.apply(this, arguments) || this;
+    }
+    return CompleteTodoStateChanger;
+}(TodoStateChanger));
 var todoser = {
     name: 'sharath',
 };
